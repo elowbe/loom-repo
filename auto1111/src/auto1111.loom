@@ -1,0 +1,17 @@
+rest,,(-2427.0,-934.0),,[47, 116, 120, 116, 50, 105, 109, 103],,post
+response,,(1233.0,-1220.0),,[47, 116, 120, 116, 50, 105, 109, 103],,post
+json_extract,,(-1704.0,-1055.0),,[112, 108, 97, 99, 101, 104, 111, 108, 100, 101, 114],,false,,prompt,negprompt,seed,
+raw,,(13.0,-980.0),,[97, 112, 112, 108, 105, 99, 97, 116, 105, 111, 110, 47, 106, 115, 111, 110],,plain text,,true
+probe,,(-1118.0,266.0)
+probe,,(-1207.0,-1543.0)
+json_create,,(364.0,-1429.0),,[112, 108, 97, 99, 101, 104, 111, 108, 100, 101, 114],,false,,image,
+img-probe,,(15.0,-528.0)
+filter,,(-604.0,-1091.0),,portrait.loom,,false,,{"seed":"[45, 49, 46, 48]","upscale":"[116, 114, 117, 101]","width":"[53, 49, 50, 46, 48]","prompt":"[102, 111, 111, 116, 98, 97, 108, 108, 32, 112, 108, 97, 121, 101, 114]","height":"[53, 49, 50, 46, 48]"},,false
+filter,,(-1817.0,-605.0),,dependencies/prompt-enhancer/src/country.loom,,false,,{"sync":"[]"},,false
+length,,(-1167.0,-624.0),,0,,>
+length,,(-1190.0,-243.0),,0,,=
+raw,,(-2506.0,-208.0),,[45, 49],,plain text,,false
+append,,(-843.0,-461.0),,[]
+probe,,(-523.0,-354.0)
+connections:1:response>6:json,1:mime>3:out,2:json>0:body,4:probe>2:negprompt,5:probe>2:prompt,6:image>8:image,7:probe>8:image,8:prompt>2:prompt,8:seed>13:output,9:sync>0:body,10:check>2:seed,10:input>2:seed,11:check>2:seed,11:input>12:out,13:left>10:output,13:right>11:output,14:probe>13:output,
+.port=5000

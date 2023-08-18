@@ -1,0 +1,9 @@
+raw,,(-1445.0,-120.0),,[45, 45, 115, 99, 97, 108, 101, 32, 123, 115, 99, 97, 108, 101, 125],,plain text,,false
+expose_output,,(392.0,-255.0),,output,,false,,Image
+expose_input,,(-683.0,-423.0),,image,,[],,Image,,0,,0
+expose_input,,(-1076.0,-623.0),,scale,,[48, 46, 53],,Number,,0,,0
+expose_output,,(413.0,74.0),,log,,false,,Text
+filter,,(-235.0,-125.0),,run_aseprite_cmd.loom,,false,,{"image":"[]","command":"[45, 45, 115, 99, 97, 108, 101, 32, 48, 46, 49, 50, 53]"},,false
+probe,,(-149.0,-584.0)
+connections:1:terminal0>5:output,4:terminal0>5:log,5:image>2:terminal0,5:command>0:out,6:probe>0:out,
+.port=80
